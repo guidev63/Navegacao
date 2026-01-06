@@ -3,12 +3,12 @@ import { Header } from "@/components/Header";
 import { Title } from "@/components/Title";
 import { View } from "react-native";
 
-export function Home(){
+export function Product(){
     return (<View style={{ flex:1, padding: 32 }}
     >
      <Header>
-        <Title>Home</Title>
-        <ButtonIcon name="add-circle"></ButtonIcon>
+         <ButtonIcon name="arrow-circle-left"></ButtonIcon>
+        <Title>Product</Title>
      </Header>
     </View>
     )

@@ -9,7 +9,8 @@ export function Header({ children }: { children: React.ReactNode }) {
             alignItems:"center",
             marginBottom: 54,
             
-        }}>
+        }}
+        >
             {children}
         </View>
     )
