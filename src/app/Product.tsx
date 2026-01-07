@@ -12,4 +12,5 @@ export function Product(){
      </Header>
     </View>
     )
+    
 }
