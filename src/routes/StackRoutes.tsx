@@ -8,9 +8,10 @@ const Stack = createNativeStackNavigator();
 export function StackRoutes() {
     return (
         <Stack.Navigator
-            initialRouteName="product" 
+            initialRouteName="home" 
             screenOptions={{
                 headerTitleAlign: "center",
+                headerShown: false
             }}
         >
             <Stack.Screen
