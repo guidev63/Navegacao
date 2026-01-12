@@ -3,16 +3,23 @@ import { ButtonIcon } from "@/components/ButtonIcon";
 import { Header } from "@/components/Header";
 import { Title } from "@/components/Title";
 import { StackRoutesProps } from "@/routes/StackRoutes";
-import { BottomRoutesProps } from "@/routes/BottomRoutes";
-export function Home({ navigation }: BottomRoutesProps<"home">) {
+import { DrawerRoutesProps } from "@/routes/DrawerRoutes";
+export function Home({ navigation }: DrawerRoutesProps<"home">) {
   return (
     <View style={{ flex: 1, padding: 32, paddingTop: 54 }}>
+
       <Header>
-        <Title>Home</Title>
-        <ButtonIcon
+         <ButtonIcon
           name="add-circle"
           onPress={() => navigation.navigate("product", { id:""})}
         />
+       
+        <Title>Home</Title>
+
+         <ButtonIcon
+          name="menu"
+          onPress={() => navigation.toggleDrawer()}/>
+
       </Header>
     </View>
   );

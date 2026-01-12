@@ -14,19 +14,24 @@ export function BottomRoutes() {
     return (
         <Tab.Navigator
             initialRouteName="home"
-            screenOptions={{ headerShown: false }}
+            screenOptions={{ headerShown: false, 
+            tabBarActiveTintColor:"#2C46B1" ,
+            tabBarInactiveTintColor:"#4444",
+            tabBarLabelPosition:"beside-icon"
+            }}
         >
             <Tab.Screen name="home" component={Home}
                 options={{
-                    tabBarLabel: "Início",
-                    tabBarIcon: () => <MaterialIcons name="home" size={24} />,
+
+                    tabBarLabel: "Início",  
+                    tabBarIcon: ({color, size}) => <MaterialIcons name="home" color={color} size={size} />,
                 }}
 
             />
             <Tab.Screen name="product" component={Product}
                 options={{
                     tabBarLabel: "Produto",
-                    tabBarIcon: () => <MaterialIcons name="add-circle" size={24} />,
+                    tabBarIcon: ({color, size}) => <MaterialIcons name="add-circle" color={color} size={size} />,
 
                 }}
             />
